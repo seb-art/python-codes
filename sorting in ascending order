@@ -1,0 +1,23 @@
+firstNumber = input('please enter first integer: ')
+secondNumber = input('please enter second integer: ')
+thirdNumber = input('please enter third integer: ')
+if firstNumber > secondNumber and firstNumber > thirdNumber:
+    greatest = firstNumber
+elif secondNumber > firstNumber and secondNumber > thirdNumber:
+    greatest = secondNumber
+elif thirdNumber > firstNumber and thirdNumber > secondNumber:
+    greatest = thirdNumber
+if firstNumber < secondNumber and firstNumber < thirdNumber:
+    least = firstNumber
+elif secondNumber < firstNumber and secondNumber < thirdNumber:
+    least = secondNumber
+elif thirdNumber < firstNumber and thirdNumber < secondNumber:
+    least = thirdNumber
+if firstNumber is not least or greatest:
+    secondGreatest = firstNumber
+elif secondNumber is not least or greatest:
+    secondGreatest = secondNumber
+else:
+    secondGreatest = thirdNumber
+
+print("From least to greatest the order is:" + least + ',' + secondGreatest + ',' + greatest)
