@@ -1,0 +1,51 @@
+# This program is intended to output a bill for a fruit stand
+
+
+num_apples = int(input("Please enter the number of apples: "))
+while num_apples < 0:
+    print("please enter a valid number")
+    num_apples = int(input("Please enter the number of apples: "))
+num_bananas = int(input("Please enter the number of bunches of bananas: "))
+while num_bananas < 0:
+    print("please enter a valid number")
+    num_bananas = int(input("Please enter the number of bunches of bananas: "))
+num_oranges = int(input("Please enter the number of oranges: "))
+while num_oranges < 0:
+    print("please enter a valid number")
+    num_oranges = int(input("Please enter the number of oranges: "))
+num_lemons = int(input("Please enter the number of lemons: "))
+while num_lemons < 0:
+    print("please enter a valid number")
+    num_lemons = int(input("Please enter the number of lemons: "))
+
+num_total = num_apples + num_bananas + num_oranges + num_lemons
+
+price_apples = 0.50
+price_bananas = 1.75
+price_oranges = 0.75
+price_lemons = 1.50
+tot_apples = num_apples * price_apples
+tot_bananas = num_bananas * price_bananas
+tot_oranges = num_oranges * price_oranges
+tot_lemons = num_lemons * price_lemons
+bill_tot = tot_apples + tot_bananas + tot_oranges + tot_lemons
+print("")
+if num_apples < 2:
+    print(f"The total bill for {num_apples} apple is: ${tot_apples:.2f}")
+else:
+    print(f"The total bill for {num_apples} apples is: ${tot_apples:.2f}")
+if num_bananas < 2:
+    print(f"The total bill for {num_bananas} banana is:${tot_bananas:.2f}")
+else:
+    print(f"The total bill for {num_bananas} bunches of bananas is:${tot_bananas:.2f}")
+if num_oranges < 2:
+    print(f"The total bill for {num_oranges} orange is: ${tot_oranges:.2f}")
+else:
+    print(f"The total bill for {num_oranges} oranges is: ${tot_oranges:.2f}")
+if num_lemons < 2:
+    print(f"The total bill for {num_lemons} lemon is: ${tot_lemons:.2f}")
+else:
+    print(f"The total bill for {num_lemons} lemons is: ${tot_oranges:.2f}")
+print("")
+print(f"The total number of items purchased is: {num_total}")
+print(f"The overall total bill is: ${bill_tot:.2f}")
