@@ -1,0 +1,9 @@
+import numpy as np
+from numpy.lib.polynomial import roots
+
+a = float(input('please enter coefficient a: '))
+b = float(input('please enter coefficient b: '))
+c = float(input('please enter coefficient c: '))
+
+coefficients = [a, b, c]
+print("the roots  of the polynomial are ", np.roots(coefficients))
